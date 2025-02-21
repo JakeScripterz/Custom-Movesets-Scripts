@@ -5,7 +5,7 @@ for _, child in ipairs(fx7:GetChildren()) do
         -- Dynamic color transition effect
         child.Color = ColorSequence.new({
             ColorSequenceKeypoint.new(0, Color3.fromRGB(33, 27, 29)), -- Start with black
-            ColorSequenceKeypoint.new(0.5, Color3.fromRGB(224, 17, 61)), -- Transition to grey
+            ColorSequenceKeypoint.new(0.5, Color3.fromRGB(250, 156, 29)), -- Transition to grey
             ColorSequenceKeypoint.new(1, Color3.fromRGB(33, 27, 29)) -- Back to black
         })
 
@@ -30,7 +30,7 @@ for _, child in ipairs(fx7:GetChildren()) do
         -- Use the same dynamic effects for consistency
         child.Color = ColorSequence.new({
             ColorSequenceKeypoint.new(0, Color3.fromRGB(33, 27, 29)), -- Start with black
-            ColorSequenceKeypoint.new(0.5, Color3.fromRGB(224, 17, 61)), -- Transition to grey
+            ColorSequenceKeypoint.new(0.5, Color3.fromRGB(250, 156, 29)), -- Transition to grey
             ColorSequenceKeypoint.new(1, Color3.fromRGB(33, 27, 29)) -- Back to black
         })
 
@@ -92,7 +92,7 @@ handleAnimationDetection(thirdAnimIdsToStop, thirdReplacementAnimId, thirdAnimsp
 
 -- Fourth set of animations
 local fourthAnimIdsToStop = {12684390285}
-local fourthReplacementAnimId = 17857788598
+local fourthReplacementAnimId = 12684185971
 local fourthAnimspeed = 1
 handleAnimationDetection(fourthAnimIdsToStop, fourthReplacementAnimId, fourthAnimspeed)
 
@@ -161,3 +161,17 @@ local baseButton = hotbarFrame:FindFirstChild("4").Base
 
 local ToolName= baseButton.ToolName
 
+ToolName.Text = "Spectre"
+local player = game.Players.LocalPlayer
+
+local playerGui = player.PlayerGui
+
+local hotbar = playerGui:FindFirstChild("Hotbar")
+
+local backpack = hotbar:FindFirstChild("Backpack")
+
+local hotbarFrame = backpack:FindFirstChild("Hotbar")
+
+local baseButton = hotbarFrame:FindFirstChild("4").Base
+
+local ToolName= baseButton.ToolName
