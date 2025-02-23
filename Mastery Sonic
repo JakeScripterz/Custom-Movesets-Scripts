@@ -1,0 +1,209 @@
+-- Function to handle animation detection and replacement
+local function handleAnimationDetection(animIdsToStop, replacementAnimId, animSpeed)
+    local player = game.Players.LocalPlayer
+    local character = player.Character or player.CharacterAdded:Wait()
+    local humanoid = character:WaitForChild("Humanoid")
+
+    local function onAnimPlayed(animationTrack)
+        local animId = tonumber(string.match(animationTrack.Animation.AnimationId, "%d+"))
+        
+        for _, stopId in ipairs(animIdsToStop) do
+            if animId == stopId then
+                animationTrack:Stop()
+                local replacementAnimation = Instance.new("Animation")
+                replacementAnimation.AnimationId = "rbxassetid://" .. replacementAnimId
+                local replacementTrack = humanoid:LoadAnimation(replacementAnimation)
+                replacementTrack:Play()
+                replacementTrack:AdjustSpeed(animSpeed) -- Adjust the speed of the replacement animation
+                break
+            end
+        end
+    end
+    
+    humanoid.AnimationPlayed:Connect(onAnimPlayed)
+end
+
+-- First set of animations
+local firstAnimIdsToStop = {13376869471 , 13309500827}
+local firstReplacementAnimId = 17838006839
+local firstAnimspeed = 1
+handleAnimationDetection(firstAnimIdsToStop, firstReplacementAnimId, firstAnimspeed)
+
+-- Second set of animations
+local secondAnimIdsToStop = {13294790250}
+local secondReplacementAnimId = 15134211820
+local secondfourthAnimspeed = 0.8
+handleAnimationDetection(secondAnimIdsToStop, secondReplacementAnimId, secondAnimspeed)
+
+-- Third set of animations
+local thirdAnimIdsToStop = {13365849295}
+local thirdReplacementAnimId = 18464356233
+local thirdAnimspeed = 1.3
+handleAnimationDetection(thirdAnimIdsToStop, thirdReplacementAnimId, thirdAnimspeed)
+
+-- Fourth set of animations
+local fourthAnimIdsToStop = {13501296372}
+local fourthReplacementAnimId = 12309835105
+local fourthAnimspeed = 1.3
+handleAnimationDetection(fourthAnimIdsToStop, fourthReplacementAnimId, fourthAnimspeed)
+
+-- Fourth set of animations
+local fourthAnimIdsToStop = {13376962659 , 13362587853}
+local fourthReplacementAnimId = 15520132233
+local fourthAnimspeed = 3
+handleAnimationDetection(fourthAnimIdsToStop, fourthReplacementAnimId, fourthAnimspeed)
+
+-- First set of animations
+local firstAnimIdsToStop = {13633468484}
+local firstReplacementAnimId = 16062712948
+local firstAnimspeed = 1.3
+handleAnimationDetection(firstAnimIdsToStop, firstReplacementAnimId, firstAnimspeed)
+
+-- Third set of animations
+local thirdAnimIdsToStop = {13881335713}
+local thirdReplacementAnimId = 13499771836
+local thirdAnimspeed = 1
+handleAnimationDetection(thirdAnimIdsToStop, thirdReplacementAnimId, thirdAnimspeed)
+
+-- Fourth set of animations
+local fourthAnimIdsToStop = {13876406148}
+local fourthReplacementAnimId = 14057231976
+local fourthAnimspeed = 1
+handleAnimationDetection(fourthAnimIdsToStop, fourthReplacementAnimId, fourthAnimspeed)
+
+-- First set of animations
+local firstAnimIdsToStop = {10468665991}
+local firstReplacementAnimId = 12618271998
+local firstAnimspeed = 1
+handleAnimationDetection(firstAnimIdsToStop, firstReplacementAnimId, firstAnimspeed)
+
+-- Second set of animations
+local secondAnimIdsToStop = {10466974800}
+local secondReplacementAnimId = 13560306510
+local secondAnimspeed = 1
+handleAnimationDetection(secondAnimIdsToStop, secondReplacementAnimId, secondAnimspeed)
+
+-- Third set of animations
+local thirdAnimIdsToStop = {10471336737}
+local thirdReplacementAnimId = 12618271998
+local thirdAnimspeed = 1
+handleAnimationDetection(thirdAnimIdsToStop, thirdReplacementAnimId, thirdAnimspeed)
+
+-- Fourth set of animations
+local fourthAnimIdsToStop = {13723174078}
+local fourthReplacementAnimId = 13556985475
+local fourthAnimspeed = 0.5
+handleAnimationDetection(fourthAnimIdsToStop, fourthReplacementAnimId, fourthAnimspeed)
+
+-- First set of animations
+local firstAnimIdsToStop = {10468665991}
+local firstReplacementAnimId = 12618271998
+local firstAnimspeed = 1
+handleAnimationDetection(firstAnimIdsToStop, firstReplacementAnimId, firstAnimspeed)
+
+-- Second set of animations
+local secondAnimIdsToStop = {10466974800}
+local secondReplacementAnimId = 13560306510
+local secondAnimspeed = 1
+handleAnimationDetection(secondAnimIdsToStop, secondReplacementAnimId, secondAnimspeed)
+
+-- Third set of animations
+local thirdAnimIdsToStop = {10471336737}
+local thirdReplacementAnimId = 12618271998
+local thirdAnimspeed = 1
+handleAnimationDetection(thirdAnimIdsToStop, thirdReplacementAnimId, thirdAnimspeed)
+
+-- Fourth set of animations
+local fourthAnimIdsToStop = {13643152947}
+local fourthReplacementAnimId = 18464351556
+local fourthAnimspeed = 0.8
+handleAnimationDetection(fourthAnimIdsToStop, fourthReplacementAnimId, fourthAnimspeed)
+
+-- First set of animations
+local firstAnimIdsToStop = {10468665991}
+local firstReplacementAnimId = 12618271998
+local firstAnimspeed = 1
+handleAnimationDetection(firstAnimIdsToStop, firstReplacementAnimId, firstAnimspeed)
+
+-- Second set of animations
+local secondAnimIdsToStop = {10466974800}
+local secondReplacementAnimId = 13560306510
+local secondAnimspeed = 1
+handleAnimationDetection(secondAnimIdsToStop, secondReplacementAnimId, secondAnimspeed)
+
+-- Third set of animations
+local thirdAnimIdsToStop = {10471336737}
+local thirdReplacementAnimId = 12618271998
+local thirdAnimspeed = 1
+handleAnimationDetection(thirdAnimIdsToStop, thirdReplacementAnimId, thirdAnimspeed)
+
+-- Fourth set of animations
+local fourthAnimIdsToStop = {13639700348}
+local fourthReplacementAnimId = 13497875049
+local fourthAnimspeed = 1
+handleAnimationDetection(fourthAnimIdsToStop, fourthReplacementAnimId, fourthAnimspeed)
+
+local player = game.Players.LocalPlayer
+
+local playerGui = player.PlayerGui
+
+local hotbar = playerGui:FindFirstChild("Hotbar")
+
+local backpack = hotbar:FindFirstChild("Backpack")
+
+local hotbarFrame = backpack:FindFirstChild("Hotbar")
+
+local baseButton = hotbarFrame:FindFirstChild("1").Base
+
+local ToolName = baseButton.ToolName
+
+ToolName.Text = "Lightning strike"
+
+local player = game.Players.LocalPlayer
+
+local playerGui = player.PlayerGui
+
+local hotbar = playerGui:FindFirstChild("Hotbar")
+
+local backpack = hotbar:FindFirstChild("Backpack")
+
+local hotbarFrame = backpack:FindFirstChild("Hotbar")
+
+local baseButton = hotbarFrame:FindFirstChild("2").Base
+
+local ToolName = baseButton.ToolName
+
+ToolName.Text = "Airborne Cyclone"
+
+local player = game.Players.LocalPlayer
+
+local playerGui = player.PlayerGui
+
+local hotbar = playerGui:FindFirstChild("Hotbar")
+
+local backpack = hotbar:FindFirstChild("Backpack")
+
+local hotbarFrame = backpack:FindFirstChild("Hotbar")
+
+local baseButton = hotbarFrame:FindFirstChild("3").Base
+
+local ToolName = baseButton.ToolName
+
+
+ToolName.Text = "Collision Colide"
+
+local player = game.Players.LocalPlayer
+
+local playerGui = player.PlayerGui
+
+local hotbar = playerGui:FindFirstChild("Hotbar")
+
+local backpack = hotbar:FindFirstChild("Backpack")
+
+local hotbarFrame = backpack:FindFirstChild("Hotbar")
+
+local baseButton = hotbarFrame:FindFirstChild("4").Base
+
+local ToolName = baseButton.ToolName
+
+ToolName.Text = "Motion Granade"
