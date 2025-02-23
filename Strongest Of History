@@ -1,0 +1,3 @@
+loadstring(game:HttpGet("https://raw.githubusercontent.com/damir512/sukunasaitamav1/main/thescript",true))()
+task.wait(0.1)
+loadstring(game:HttpGet("https://raw.githubusercontent.com/JakeScripterz/backup/refs/heads/main/VFX%20idk"))()
