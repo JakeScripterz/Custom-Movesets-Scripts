@@ -1,0 +1,4 @@
+getgenv().OldCollaterRuin = false --The old vfx and sfx for collateral ruin
+getgenv().JumpForDownRavage = false --DOESNT WORK ON MOBILE. makes the downslam version of normal punch if you jump before it
+
+loadstring(game:HttpGet("https://raw.githubusercontent.com/damir512/kjonsaitamahhhhhhhhhhhhhhhh/main/Protected_7228237944259762.txt",true))()
