@@ -1,0 +1,8 @@
+** YUJI X SUKUNA moveset**
+
+getgenv().secret = false -- unknown (don't set true)
+getgenv().Dance = true --- dance boppin
+getgenv().fog = true ---set true if you want cool cloud
+getgenv().infinitedash = true ---set true if you want infinite dash sigma
+getgenv().night = false ---set true night 
+loadstring(game:HttpGet('https://raw.githubusercontent.com/Kenjihin69/Kenjihin69/refs/heads/main/Sigma%20v2%20vessel%20tp'))()
