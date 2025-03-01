@@ -11,11 +11,11 @@ end
 character.DescendantAdded:Connect(onBodyVelocityAdded)
 
 local moveSet = {
-    punch1 = { animationId = "rbxassetid://10469493270" },
-    punch2 = { animationId = "rbxassetid://10469630950" },
+    punch1 = { animationId = "rbxassetid://16515503507" },
+    punch2 = { animationId = "rbxassetid://16552234590" },
     punch3 = { animationId = "rbxassetid://10469639222" },
     punch4 = { animationId = "rbxassetid://10469643643" },
-    move1 = { animationId = "rbxassetid://10468665991" },
+    move1 = { animationId = "rbxassetid://18896124320" },
     move2 = { animationId = "rbxassetid://10466974800" },
     move3 = { animationId = "rbxassetid://10471336737" },
     move4 = { animationId = "rbxassetid://12510170988" },
