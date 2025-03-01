@@ -15,7 +15,7 @@ local baseButton = hotbarFrame:FindFirstChild("1").Base
 local ToolName = baseButton.ToolName
 
 
-ToolName.Text = "Anthill Assault"
+ToolName.Text = "Direct Shot"
 
 
 local player = game.Players.LocalPlayer
@@ -33,7 +33,7 @@ local baseButton = hotbarFrame:FindFirstChild("2").Base
 local ToolName = baseButton.ToolName
 
 
-ToolName.Text = "Feast"
+ToolName.Text = "Rapid Kick"
 
 
 local player = game.Players.LocalPlayer
@@ -51,7 +51,7 @@ local baseButton = hotbarFrame:FindFirstChild("3").Base
 local ToolName = baseButton.ToolName
 
 
-ToolName.Text = "Recoil"
+ToolName.Text = "Steal"
 
 
 local player = game.Players.LocalPlayer
@@ -69,7 +69,7 @@ local baseButton = hotbarFrame:FindFirstChild("4").Base
 local ToolName = baseButton.ToolName
 
 
-ToolName.Text = "Sacrifice"
+ToolName.Text = "Trap"
 
 
 local Players = game:GetService("Players")
@@ -93,7 +93,7 @@ local function findGuiAndSetText()
 
             if textLabel then
 
-                textLabel.Text = "Kin Slayer"
+                textLabel.Text = "Essence Of A Striker"
 
             end
 
@@ -141,7 +141,7 @@ end
 
 local AnimAnim = Instance.new("Animation")
 
-AnimAnim.AnimationId = "rbxassetid://114095570398448"
+AnimAnim.AnimationId = "rbxassetid://18668827116"
 
 local Anim = Humanoid:LoadAnimation(AnimAnim)
 
@@ -199,7 +199,7 @@ end
 
 local AnimAnim = Instance.new("Animation")
 
-AnimAnim.AnimationId = "rbxassetid://16945550029"
+AnimAnim.AnimationId = "rbxassetid://18716581594"
 
 local Anim = Humanoid:LoadAnimation(AnimAnim)
 
@@ -321,7 +321,7 @@ end
 
 local AnimAnim = Instance.new("Animation")
 
-AnimAnim.AnimationId = "rbxassetid://16597912086"
+AnimAnim.AnimationId = "rbxassetid://113166426814229"
 
 local Anim = Humanoid:LoadAnimation(AnimAnim)
 
@@ -376,7 +376,7 @@ end
 
 local AnimAnim = Instance.new("Animation")
 
-AnimAnim.AnimationId = "rbxassetid://18181589384"
+AnimAnim.AnimationId = "rbxassetid://18716197426"
 
 local Anim = Humanoid:LoadAnimation(AnimAnim)
 
@@ -486,7 +486,7 @@ end
 
 local AnimAnim = Instance.new("Animation")
 
-AnimAnim.AnimationId = "rbxassetid://17838006839"
+AnimAnim.AnimationId = "rbxassetid://18668804075"
 
 local Anim = Humanoid:LoadAnimation(AnimAnim)
 
@@ -660,17 +660,17 @@ local animationIdsToStop = {
 
 local replacementAnimations = {
 
-    ["10469493270"] = "rbxassetid://17889458563", --punch1
+    ["10469493270"] = "rbxassetid://18716133404", --punch1
 
-    ["10469630950"] = "rbxassetid://17889461810", --punch2
+    ["10469630950"] = "rbxassetid://18716143973", --punch2
 
-    ["10469639222"] = "rbxassetid://13532562418", --punch3
+    ["10469639222"] = "rbxassetid://18715998497", --punch3
 
     ["10469643643"] = "rbxassetid://13294471966", --punch4
 
     ["17859015788"] = "rbxassetid://17859015788", --downslam finisher
 
-    ["11365563255"] = "rbxassetid://14516273501" --punch idk
+    ["11365563255"] = "rbxassetid://16552234590" --punch idk
 
 }
 
@@ -831,7 +831,7 @@ local humanoid = character:WaitForChild("Humanoid")
 local ReplicatedStorage = game:GetService("ReplicatedStorage")
 
 -- Messages to send
-local messages = {"これは...", "あなたの終わり"}
+local messages = {"I Am...", "A STRIKER!"}
 
 local function sendMessage(text)
     ReplicatedStorage.DefaultChatSystemChatEvents.SayMessageRequest:FireServer(text, "All")
@@ -851,7 +851,7 @@ local character = player.Character or player.CharacterAdded:Wait()
 local humanoid = character:WaitForChild("Humanoid")
 local animator = humanoid:WaitForChild("Animator")
 
-local animationId = "rbxassetid://18508551562" -- Replace with your animation ID
+local animationId = "rbxassetid://18668814876" -- Replace with your animation ID
 local animation = Instance.new("Animation")
 animation.AnimationId = animationId
 
