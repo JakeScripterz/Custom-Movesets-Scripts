@@ -26,12 +26,12 @@ local moveSet = {
 }
 
 local replacementMoveset = {
-    punch1 = { animationId = "rbxassetid://13532600125", startingTime = 0, endingTime = 1.5 },
-    punch2 = { animationId = "rbxassetid://13295919399", startingTime = 0, endingTime = 1.8 },
-    punch3 = { animationId = "rbxassetid://17889458563", startingTime = 0, endingTime = 2 },
+    punch1 = { animationId = "rbxassetid://18715994424", startingTime = 0, endingTime = 1.5 },
+    punch2 = { animationId = "rbxassetid://18715999597", startingTime = 0, endingTime = 1.8 },
+    punch3 = { animationId = "rbxassetid://18169291044", startingTime = 0, endingTime = 2 },
     punch4 = { animationId = "rbxassetid://13378708199", startingTime = 0, endingTime = 2.2 },
-    move1 = { animationId = "rbxassetid://84550516017944", startingTime = 6.8, endingTime = 7.97, speed = 1 },
-    move2 = { animationId = "rbxassetid://18716581594", startingTime = 0.56, endingTime = 8.37, speed = 3 },
+    move1 = { animationId = "rbxassetid://18716149223", startingTime = 6.8, endingTime = 7.97, speed = 1 },
+    move2 = { animationId = "rbxassetid://15290930205", startingTime = 0.56, endingTime = 8.37, speed = 3 },
     move3 = { animationId = "rbxassetid://16944345619", startingTime = 0.3, endingTime = 2.2 },
     move4 = { animationId = "rbxassetid://113166426814229", startingTime = 0, endingTime = 3.5, speed = 1.25 },
     dash = { animationId = "rbxassetid://17838006839", startingTime = 0, endingTime = 1 },
@@ -110,7 +110,7 @@ local textLabel = player.PlayerGui:FindFirstChild("ScreenGui") and player.Player
 local hotbarFrame = player.PlayerGui:FindFirstChild("Hotbar"):FindFirstChild("Backpack"):FindFirstChild("Hotbar")
 
 local toolTable = {
-    ["Normal Punch"] = "The Punchiest Punch",
+    ["Normal Punch"] = "Direct Punch",
     ["Consecutive Punches"] = "Rapid Strike",
     ["Shove"] = "Steal",
     ["Uppercut"] = "Trap"
