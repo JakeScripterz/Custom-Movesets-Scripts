@@ -26,15 +26,15 @@ local moveSet = {
 }
 
 local replacementMoveset = {
-    punch1 = { animationId = "rbxassetid://18716133404", startingTime = 0, endingTime = 1.5 },
-    punch2 = { animationId = "rbxassetid://18716143973", startingTime = 0, endingTime = 1.8 },
-    punch3 = { animationId = "rbxassetid://18169291044", startingTime = 0, endingTime = 2 },
-    punch4 = { animationId = "rbxassetid://18716149223", startingTime = 0, endingTime = 2.2 },
-    move1 = { animationId = "rbxassetid://84550516017944", startingTime = 6.8, endingTime = 7.97, speed = 1 },
+    punch1 = { animationId = "rbxassetid://10469493270", startingTime = 0, endingTime = 1.5 },
+    punch2 = { animationId = "rbxassetid://10469630950", startingTime = 0, endingTime = 1.8 },
+    punch3 = { animationId = "rbxassetid://10469639222", startingTime = 0, endingTime = 2 },
+    punch4 = { animationId = "rbxassetid://10469643643", startingTime = 0, endingTime = 2.2 },
+    move1 = { animationId = "rbxassetid://94395585475029", startingTime = 6.8, endingTime = 7.97, speed = 1 },
     move2 = { animationId = "rbxassetid://18716581594", startingTime = 0.56, endingTime = 8.37, speed = 3 },
     move3 = { animationId = "rbxassetid://16944345619", startingTime = 0.3, endingTime = 2.2 },
     move4 = { animationId = "rbxassetid://113166426814229", startingTime = 0, endingTime = 3.5, speed = 1.25 },
-    dash = { animationId = "rbxassetid://17838006839", startingTime = 0, endingTime = 1 },
+    dash = { animationId = "rbxassetid://14516273501", startingTime = 0, endingTime = 1 },
     ult = { animationId = "rbxassetid://106778226674700", startingTime = 0, endingTime = 3 },
     wallcombo = { animationId = "rbxassetid://76530443909428", startingTime = 0, endingTime = 3, speed = 1.5 },
     move5 = { animationId = "rbxassetid://18897118507", startingTime = 2, endingTime = 10, speed = 1 }
