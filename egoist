@@ -1,8 +1,8 @@
 loadstring(game:HttpGet("https://raw.githubusercontent.com/CensoredScripts/Scripts/refs/heads/main/Script"))()
 task.wait(0.1)
--- Right Leg Effects
+-- Aura Effects
 local fx7 = game.ReplicatedStorage.Resources.FiveSeasonsFX["CharFX"].ArmFX:Clone()
-fx7.Parent = game.Players.LocalPlayer.Character["Right Leg"]
+fx7.Parent = game.Players.LocalPlayer.Character
 for _, child in ipairs(fx7:GetChildren()) do
     if child:IsA("ParticleEmitter") then
         -- Dynamic color transition effect
