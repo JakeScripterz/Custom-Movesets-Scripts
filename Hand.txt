@@ -108,19 +108,6 @@ playerGui.DescendantAdded:Connect(findGuiAndSetText)
 
 findGuiAndSetText()
 
---[[notification]]
-
-game.StarterGui:SetCore("SendNotification", {
- Title = "Smart guy moveset <W.I.P>";
- Text = "(the hand moveset from fiction battlegrounds)";
- Icon = "";
- Duration= "10";
- Button1 = "Ok";
- Button2 = "Ok";
-})
-
---[[NOTIFICATION END]]
-
 --[[Move 1]]
 
 local animationId = 10468665991
