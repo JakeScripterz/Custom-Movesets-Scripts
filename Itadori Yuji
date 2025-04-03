@@ -1,6 +1,6 @@
 game.StarterGui:SetCore("SendNotification", {
         Title = "Itadori X Sukuna";
-        Text = "Made By MonDex and Kiko";
+        Text = "The Guy who fingers, uhh idk";
         Icon = "rbxassetid://110652067227135";
         Duration = 5;
     })
@@ -2342,9 +2342,9 @@ local og3 = "Shove"
 local og4 = "Uppercut"
 
 local mn1 = "Black Flash"
-local mn2 = "Barrage"
-local mn3 = "Strong Punch"
-local mn4 = "Jaw Breaker"
+local mn2 = "Flashstrike"
+local mn3 = "Red Surge"
+local mn4 = "Thrust"
 
 local ultOG1 = "Death Counter"
 local ultOG2 = "Table Flip"
