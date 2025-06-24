@@ -1593,7 +1593,21 @@ function Five()
     else 
         base.ToolName.Text = "Lock"
     end
-    -- Rest of the function remains the same
+    _G.yse = game:GetService("RunService").Heartbeat:Connect(function(step)
+        if _G.EN ~= nil then 
+            if _G.EN ~= char then 
+                hrp.CFrame = CFrame.lookAt(hrp.Position, 
+                Vector3.new(_G.EN.HumanoidRootPart.Position.X,hrp.Position.Y,_G.EN.HumanoidRootPart.Position.Z))
+                game:GetService("RunService").RenderStepped:Wait()
+                hrp.CFrame = CFrame.lookAt(hrp.Position, 
+                Vector3.new(_G.EN.HumanoidRootPart.Position.X,hrp.Position.Y,_G.EN.HumanoidRootPart.Position.Z))
+            end
+        end
+    end) 
+    spawn(function()
+        repeat wait() until char.Humanoid.Health == 0 or _G.Enabled == false 
+        _G.yse:Disconnect()
+    end) 
 end
 
 local cdcc = lp.PlayerGui.Hotbar.Backpack.LocalScript.Cooldown
@@ -1694,6 +1708,8 @@ task.wait(3)
 notif:SendNotification("Info", 'Idle Animation Edit by Reap', 3)
 task.wait(3)
 notif:SendNotification("Info", 'Notification UI by IceMinisterq on Github', 3)
+task.wait(3)
+notif:SendNotification("Info", 'Fixed 4th Move by SpookzWasHere on Discord', 3)
 task.wait(3)
 notif:SendNotification("Info", 'Lightning Effects by EvLightning on Github', 3)
 task.wait(3)
