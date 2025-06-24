@@ -1573,71 +1573,6 @@ Ult()
 end
 end),"Ult Start Tap")
 _G.Enabled = false
-local uis = game:GetService("UserInputService")
-local basemini = lp.PlayerGui.Hotbar.Backpack.Hotbar["4"]
-local base = lp.PlayerGui.Hotbar.Backpack.Hotbar["4"].Base
-basemini.Visible = true
-base.Reuse.Visible = false
-getgenv().Cooldown4 = .2
-function Four()
-pcall(function() _G.yse:Disconnect() end)
-if _G.Enabled == false then 
-_G.Enabled = true
-else  
-_G.Enabled = false
-end
-
-if _G.Enabled == true then 
-base.ToolName.Text = "Unlock"
-else 
-base.ToolName.Text = "Lock"
-end
-_G.yse = game:GetService("RunService").Heartbeat:Connect(function(step)
-if _G.EN ~= nil then 
-if _G.EN ~= char then 
-hrp.CFrame = CFrame.lookAt(hrp.Position, 
-Vector3.new(_G.EN.HumanoidRootPart.Position.X,hrp.Position.Y,_G.EN.HumanoidRootPart.Position.Z))
-game:GetService("RunService").RenderStepped:Wait()
-hrp.CFrame = CFrame.lookAt(hrp.Position, 
-Vector3.new(_G.EN.HumanoidRootPart.Position.X,hrp.Position.Y,_G.EN.HumanoidRootPart.Position.Z))
-end end
-end) 
-spawn(function()
-repeat wait() until char.Humanoid.Health == 0 or _G.Enabled == false 
-_G.yse:Disconnect()
-end) end
-local cdcc = lp.PlayerGui.Hotbar.Backpack.LocalScript.Cooldown
-base.ToolName.Text = "Lock"
-AddSignal(
-uis.InputBegan:Connect(function(inputs, event)
-
-if event == true then return end
-if inputs.KeyCode == Enum.KeyCode.Four and not base:FindFirstChild("Cooldown") then
-spawn(function() 		Five() end)
-local deez = cdcc:Clone()
-deez.Parent = base
-game:GetService("TweenService"):Create(deez, 
-TweenInfo.new(getgenv().Cooldown5,Enum.EasingStyle.Linear),
-{Size=UDim2.new(1,0,0,0)}):Play();
-wait(getgenv().Cooldown4)
-deez:Destroy()
-end end),"Move5 Bind")
-AddSignal( 
-base.MouseButton1Click:Connect(function()
-if not base:FindFirstChild("Cooldown") then
-spawn(function() 		Four() end)
-local deez = cdcc:Clone()
-deez.Parent = base
-game:GetService("TweenService"):Create(deez, 
-TweenInfo.new(getgenv().Cooldown5,Enum.EasingStyle.Linear),
-{Size=UDim2.new(1,0,0,0)}):Play();
-wait(getgenv().Cooldown5)
-deez:Destroy()
-end
-end),"Move5 Tap")
- AddSignal(char.Humanoid.AnimationPlayed:Connect(function(v)
-if v.Animation.AnimationId == "rbxassetid://109617620932970" then
-v:Stop()
 local rnd = math.random(0,1)
 if rnd == 0 then 
 local Anim = Instance.new("Animation")
@@ -1705,6 +1640,9 @@ task.wait(3)
 notif:SendNotification("Info", 'Lightning Effects by EvLightning on Github', 3)
 task.wait(3)
 notif:SendNotification("Info", 'Signal Script by i.am.an.agent on Discord', 3)
+task.wait(3)
+notif:SendNotification("Info", 'Lock On Removed By SpookzWasHere', 
+3)
 task.wait(3)
 notif:SendNotification("Info", 'Character "Akiha Vermillion" from "Tsukihime"', 
 16)
