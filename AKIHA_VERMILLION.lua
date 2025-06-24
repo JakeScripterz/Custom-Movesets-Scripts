@@ -1613,15 +1613,15 @@ uis.InputBegan:Connect(function(inputs, event)
 
 if event == true then return end
 if inputs.KeyCode == Enum.KeyCode.Four and not base:FindFirstChild("Cooldown") then
-spawn(function() 		Four() end)
+spawn(function() 		Five() end)
 local deez = cdcc:Clone()
 deez.Parent = base
 game:GetService("TweenService"):Create(deez, 
-TweenInfo.new(getgenv().Cooldown4,Enum.EasingStyle.Linear),
+TweenInfo.new(getgenv().Cooldown5,Enum.EasingStyle.Linear),
 {Size=UDim2.new(1,0,0,0)}):Play();
 wait(getgenv().Cooldown4)
 deez:Destroy()
-end end),"Move4 Bind")
+end end),"Move5 Bind")
 AddSignal( 
 base.MouseButton1Click:Connect(function()
 if not base:FindFirstChild("Cooldown") then
@@ -1629,12 +1629,12 @@ spawn(function() 		Four() end)
 local deez = cdcc:Clone()
 deez.Parent = base
 game:GetService("TweenService"):Create(deez, 
-TweenInfo.new(getgenv().Cooldown4,Enum.EasingStyle.Linear),
+TweenInfo.new(getgenv().Cooldown5,Enum.EasingStyle.Linear),
 {Size=UDim2.new(1,0,0,0)}):Play();
-wait(getgenv().Cooldown4)
+wait(getgenv().Cooldown5)
 deez:Destroy()
 end
-end),"Move4 Tap")
+end),"Move5 Tap")
  AddSignal(char.Humanoid.AnimationPlayed:Connect(function(v)
 if v.Animation.AnimationId == "rbxassetid://109617620932970" then
 v:Stop()
